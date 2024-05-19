@@ -8,4 +8,5 @@ def age_limit_6plus(func: Callable[[Movie], str]) -> Callable[[Movie], str]:
         if movie.customer_age < 6:
             return f"Sorry, you are not old enough to watch {movie.name}!"
         return func(movie)
+
     return wrapper
