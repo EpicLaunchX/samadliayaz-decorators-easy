@@ -1,4 +1,5 @@
-from pytemplate import buy_ticket_for_children, buy_ticket_for_teens, movie_factory
+from pytemplate.domain.models import movie_factory
+from pytemplate.service.tickets import buy_ticket_for_children, buy_ticket_for_teens
 
 
 def main():
